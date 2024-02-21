@@ -28,7 +28,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Final Frame</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${process.env.PIN_CID}/4.jpg" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${process.env.PIN_CID}/${id}.jpg" />
     <meta property="fc:frame:button:1" content="${ctaLBtnTxt}" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="${ctaRBtnTxt}" />
