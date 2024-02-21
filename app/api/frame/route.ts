@@ -24,7 +24,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1
 
-  if(idAsNumber === numFrames){
+  if(idAsNumber === numFrames + 1){
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Final Frame</title>
     <meta property="fc:frame" content="vNext" />
